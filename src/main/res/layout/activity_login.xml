@@ -93,7 +93,7 @@
             android:layout_width="wrap_content"
             android:src="@drawable/signinfb"
             android:layout_margin="15dp"
-            android:background="000"
+            android:background="@color/nocolor"
             android:layout_gravity="center"
             android:layout_height="60dp"/>
 
@@ -101,7 +101,7 @@
             android:layout_width="wrap_content"
             android:src="@drawable/signingg"
             android:layout_margin="15dp"
-            android:background="000"
+            android:background="@color/nocolor"
             android:layout_gravity="center"
             android:layout_height="60dp"/>
 

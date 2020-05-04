@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application2</string>
+    <string name="register">ចុះឈ្មោះ</string>
+    <string name="Name">ឈ្មោះ</string>
+    <string name="PhoneNum">លេខទូរសព្ទ</string>
+    <string name="PW">លេខសម្ងាត់</string>
+    <string name="ConPW">បញ្ជាក់ លេខសម្ងាត់</string>
+    <string name="OR">- OR -</string>
+    <string name="categories">ប្រភេទ</string>
+    <string name="highlight">រាយ</string>
+    <string name="seeall">មើលទាំងអស់</string>
+    <string name="men">បុរស</string>
+    <string name="women">នារី</string>
+</resources>

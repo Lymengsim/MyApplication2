@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:text="Categories"
+        android:text="@string/categories"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Men " />
+                android:text="@string/men" />
         </LinearLayout>
 
         <LinearLayout
@@ -68,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Women " />
+                android:text="@string/women" />
 
     </LinearLayout>
     </LinearLayout>
@@ -95,7 +95,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="15dp"
                 android:paddingLeft="12dp"
-                android:text="Highlight"
+                android:text="@string/highlight"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -103,8 +103,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:background="000"
-                android:text="See All"
+                android:background="@color/nocolor"
+                android:text="@string/seeall"
                 android:textColor="#ED1256" />
         </RelativeLayout>
       <LinearLayout
@@ -118,7 +118,7 @@
               <ImageButton
                   android:layout_width="wrap_content"
                   android:id="@+id/dress1"
-                  android:background="0000"
+                  android:background="@color/nocolor"
                   android:layout_centerHorizontal="true"
                   android:src="@drawable/product1"
                   android:layout_height="wrap_content"/>
@@ -141,7 +141,7 @@
                   android:layout_width="wrap_content"
                   android:id="@+id/dress2"
                   android:layout_centerHorizontal="true"
-                  android:background="0000"
+                  android:background="@color/nocolor"
                   android:src="@drawable/product1"
                   android:layout_height="wrap_content"/>
 

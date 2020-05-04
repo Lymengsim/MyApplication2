@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My Application2</string>
+    <string name="register">Register</string>
+    <string name="Name">Name</string>
+    <string name="PhoneNum">Phone Number</string>
+    <string name="PW">Password</string>
+    <string name="ConPW">Confirm Password</string>
+    <string name="OR">- OR -</string>
+    <string name="categories">Categories</string>
+    <string name="highlight">Highlight</string>
+    <string name="seeall">See All</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
 </resources>
