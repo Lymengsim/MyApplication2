@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application2</string>
+    <string name="app_name">Style</string>
     <string name="register">Register</string>
     <string name="Name">Name</string>
     <string name="PhoneNum">Phone Number</string>
@@ -11,4 +11,9 @@
     <string name="seeall">See All</string>
     <string name="men">Men</string>
     <string name="women">Women</string>
+
+
+    <string name="shopping_cart">Shopping Card</string>
+    <string name="notification">Notification</string>
+    <string name="logout">Log Out</string>
 </resources>

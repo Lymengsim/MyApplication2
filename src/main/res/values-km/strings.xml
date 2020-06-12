@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Application2</string>
+    <string name="app_name">Style</string>
     <string name="register">ចុះឈ្មោះ</string>
     <string name="Name">ឈ្មោះ</string>
     <string name="PhoneNum">លេខទូរសព្ទ</string>
@@ -12,4 +12,9 @@
     <string name="seeall">មើលទាំងអស់</string>
     <string name="men">បុរស</string>
     <string name="women">នារី</string>
+
+
+    <string name="shopping_cart">Shopping Card</string>
+    <string name="notification">Notification</string>
+    <string name="logout">Log Out</string>
 </resources>
