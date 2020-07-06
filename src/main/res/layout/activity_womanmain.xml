@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/lightGrey"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:src="@drawable/moderndress" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/modern_dress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modern"
+            android:padding="10dp"
+            android:textColor="@color/pinkmain"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@+id/modern_dress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 products"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="204dp"
+            android:padding="10dp"
+            android:src="@drawable/traditional" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tradional_dress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/traditional"
+            android:padding="10dp"
+            android:textColor="@color/pinkmain"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_below="@+id/tradional_dress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 products"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Top Renting"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/dress1"
+                android:background="@color/nocolor"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/product1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/pdress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dress1"
+                android:layout_centerHorizontal="true"
+                android:text="$15.00"
+                android:textColor="#ed1256" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/dress2"
+                android:layout_centerHorizontal="true"
+                android:background="@color/nocolor"
+                android:src="@drawable/product1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/pdress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dress2"
+                android:layout_centerHorizontal="true"
+                android:text="$15.00"
+                android:textColor="#ed1256" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            app:itemIconTint="@color/pinkmain"
+            app:itemTextColor="@color/grey"
+            app:labelVisibilityMode="labeled"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/activity_bottiomnav"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

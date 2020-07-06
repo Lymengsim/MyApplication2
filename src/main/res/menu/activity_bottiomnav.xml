@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bt_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/bt_map_shop"
+        android:icon="@drawable/ic_map_shop"
+        android:title="@string/map_shop"/>
+    <item
+        android:id="@+id/bt_favorite"
+        android:icon="@drawable/ic_fav"
+        android:title="@string/favorite"/>
+    <item
+        android:id="@+id/bt_account"
+        android:icon="@drawable/ic_account"
+        android:title="@string/account"/>
+    <item
+        android:id="@+id/bt_more"
+        android:icon="@drawable/ic_more"
+        android:title="@string/more"/>
+
+</menu>

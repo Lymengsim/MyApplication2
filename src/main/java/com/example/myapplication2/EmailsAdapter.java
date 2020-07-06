@@ -1,11 +1,11 @@
+package com.example.myapplication2;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.myapplication2.R;
 
 public class EmailsAdapter extends RecyclerView.Adapter<EmailViewHolder> {
 

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="app_name">Style</string>
     <string name="register">Register</string>
     <string name="Name">Name</string>
@@ -16,4 +16,15 @@
     <string name="shopping_cart">Shopping Card</string>
     <string name="notification">Notification</string>
     <string name="logout">Log Out</string>
+    
+    
+    <string name="home" > Home </string>
+    <string name="map_shop"> Shop</string>
+    <string name="favorite">Favorite</string>
+    <string name="account"> My Account</string>
+    <string name="more">More</string>
+
+    <string name="modern"> Modern Dress</string>
+    <string name="traditional">Traditional Dress</string>
+    
 </resources>
