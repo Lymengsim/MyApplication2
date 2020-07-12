@@ -6,7 +6,6 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
-        android:id="@+id/toolbar"
         app:itemIconTint="@color/pinkmain"
         android:layout_alignParentBottom="true"
         app:itemTextColor="@color/grey"
@@ -14,6 +13,16 @@
         android:background="@color/white"
         app:menu="@menu/activity_bottiomnav"
         android:layout_height="wrap_content"/>
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/pinkmain"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/app_name" />
 
     <!-- Bottom Bar menu -->
     <com.google.android.material.bottomnavigation.BottomNavigationView

@@ -2,6 +2,8 @@ package com.example.myapplication2;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -17,14 +19,17 @@ import com.google.gson.Gson;
 import static com.android.volley.Response.*;
 
 public class EmailsActivity extends AppCompatActivity {
-    RecyclerView recyclerView ;
+    private ProgressBar progressBar;
+    private RecyclerView recyclerView ;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_email);
 
         //make a reference to recycler_view
-         recyclerView = findViewById(R.id.recycler_view);
+        progressBar = findViewById(R.id.progress_bar);
+        recyclerView = findViewById(R.id.recycler_view);
 
         //create and set layout manager
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
@@ -33,6 +38,10 @@ public class EmailsActivity extends AppCompatActivity {
         loadEmails();
     }
     private void loadEmails() {
+
+        // Show loading
+        showLoading(true);
+
         // load email from server using Volley library
         String url = "http://10.0.2.2/mail.php";
 
@@ -54,6 +63,8 @@ public class EmailsActivity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(EmailsActivity.this , "Somthing error while loading data from the server",Toast.LENGTH_LONG).show();
                 Log.d("PIUApp", "Load data error" + error.getMessage());
+                // hide the progressbar and view recyclerview
+                showLoading(false);
             }
         });
 
@@ -61,4 +72,14 @@ public class EmailsActivity extends AppCompatActivity {
         Volley.newRequestQueue(this).add(request);
 
 }
+
+    private void showLoading(boolean state) {
+        if(state){
+            recyclerView.setVisibility(View.INVISIBLE);
+            progressBar.setVisibility(View.VISIBLE);
+        } else {
+            progressBar.setVisibility(View.INVISIBLE);
+            recyclerView.setVisibility(View.VISIBLE);
+        }
     }
+}

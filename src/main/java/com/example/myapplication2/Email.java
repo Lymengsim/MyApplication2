@@ -1,9 +1,20 @@
 package com.example.myapplication2;
 
 public class Email {
-    private  String subject;
-    private  String body;
-    private  String sender;
+
+    private String sender;
+    private String senderProfile;
+    private String subject;
+    private String body;
+    private long time;
+
+    public String getSender() {
+        return sender;
+    }
+
+    public void setSender(String sender) {
+        this.sender = sender;
+    }
 
     public String getSenderProfile() {
         return senderProfile;
@@ -12,9 +23,6 @@ public class Email {
     public void setSenderProfile(String senderProfile) {
         this.senderProfile = senderProfile;
     }
-
-    private  String senderProfile;
-    private  long time;
 
     public String getSubject() {
         return subject;
@@ -30,14 +38,6 @@ public class Email {
 
     public void setBody(String body) {
         this.body = body;
-    }
-
-    public String getSender() {
-        return sender;
-    }
-
-    public void setSender(String sender) {
-        this.sender = sender;
     }
 
     public long getTime() {

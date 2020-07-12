@@ -156,20 +156,20 @@
     </LinearLayout>
 
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="match_parent"
-            app:itemIconTint="@color/pinkmain"
-            app:itemTextColor="@color/grey"
-            app:labelVisibilityMode="labeled"
-            android:background="@color/white"
-            android:layout_alignParentBottom="true"
-            app:menu="@menu/activity_bottiomnav"
-            android:layout_height="wrap_content"/>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:layout_width="match_parent"-->
+<!--            app:itemIconTint="@color/pinkmain"-->
+<!--            app:itemTextColor="@color/grey"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            app:menu="@menu/activity_bottiomnav"-->
+<!--            android:layout_height="wrap_content"/>-->
 
-    </RelativeLayout>
+<!--    </RelativeLayout>-->
 
 
 </LinearLayout>

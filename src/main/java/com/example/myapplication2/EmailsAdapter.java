@@ -9,13 +9,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class EmailsAdapter extends RecyclerView.Adapter<EmailViewHolder> {
 
-    public EmailsAdapter(Email[] emails) {
-        this.emails = emails;
-    }
 
     //DataSet
     private Email[] emails;
 
+
+    public EmailsAdapter(Email[] emails) {
+        this.emails = emails;
+    }
     @NonNull
     @Override
     public EmailViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -23,7 +24,7 @@ public class EmailsAdapter extends RecyclerView.Adapter<EmailViewHolder> {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View itemview = layoutInflater.inflate(R.layout.email_view_holder, parent , false);
 
-        EmailViewHolder viewHolder = new EmailViewHolder(itemview);
+//        EmailViewHolder viewHolder = new EmailViewHolder(itemview);
         return new EmailViewHolder(itemview);
     }
 
@@ -34,7 +35,6 @@ public class EmailsAdapter extends RecyclerView.Adapter<EmailViewHolder> {
         holder.bind(email);
 
     }
-
     @Override
     public int getItemCount() {
         return emails.length;

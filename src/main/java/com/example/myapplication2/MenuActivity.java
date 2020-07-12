@@ -10,30 +10,34 @@ import android.widget.PopupMenu;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class MenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        // Use custom toolbar instead of toolbar (actionbar) from the Theme
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        //register context menu to image
+        ImageView imgLogo = findViewById(R.id.dress1);
+        registerForContextMenu(imgLogo);
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater menuInflater =  getMenuInflater();
-//        menuInflater.inflate(R.menu.activity_login_option, menu);
-//        return true;
-//    }
-
-    //register context menu to image
-    ImageView dress1 = findViewById(R.id.dress1);
-
+    //to create option menu
     @Override
-    public void registerForContextMenu(View view) {
-        super.registerForContextMenu(dress1);
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater =  getMenuInflater();
+        menuInflater.inflate(R.menu.activity_login_option, menu);
+        return true;
     }
-    //implement oncreate context menu
 
+
+
+    //to create context menu
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         MenuInflater menuInflater = getMenuInflater();
