@@ -19,7 +19,7 @@
         android:title="@string/account"/>
     <item
         android:id="@+id/bt_more"
-        android:icon="@drawable/ic_more"
+        android:icon="@drawable/ic_more2"
         android:title="@string/more"/>
 
 </menu>

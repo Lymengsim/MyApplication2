@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="15dp"
+    android:background="#85FF5722"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:id="@+id/dress1"
+        android:background="@color/nocolor"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/product1"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/dots"
+        android:layout_alignRight="@+id/dress1"
+        android:src="@drawable/ic_fav"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/pdress1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dress1"
+        android:layout_centerHorizontal="true"
+        android:text="$15.00"
+        android:textColor="#ed1256" />
+</RelativeLayout>

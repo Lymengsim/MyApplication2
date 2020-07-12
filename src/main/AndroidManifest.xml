@@ -28,6 +28,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".EmailsActivity"/>
+
     </application>
 
 </manifest>
