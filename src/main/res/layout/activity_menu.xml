@@ -69,11 +69,12 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/womendress"
-            android:background="#00FFFFFF"
-            android:layout_height="wrap_content"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onButtonClick"
+                android:src="@drawable/womendress" />
 
             <TextView
                 android:layout_width="wrap_content"

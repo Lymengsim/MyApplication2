@@ -1,3 +1,5 @@
+package com.example.myapplication2;
+
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;

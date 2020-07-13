@@ -1,5 +1,6 @@
 package com.example.myapplication2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -25,6 +26,12 @@ public class MenuActivity extends AppCompatActivity {
         //register context menu to image
         ImageView imgLogo = findViewById(R.id.dress1);
         registerForContextMenu(imgLogo);
+
+
+    }
+    public void onButtonClick(View view){
+        Intent intent = new Intent(this, WomanMainActivity.class);
+        startActivity(intent);
     }
 
     //to create option menu

@@ -11,14 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 
-import static com.android.volley.Response.*;
-
-public class EmailsActivity extends AppCompatActivity {
+public class ProductsActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private RecyclerView recyclerView ;
 
@@ -26,7 +25,7 @@ public class EmailsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_email);
+        setContentView(R.layout.activity_productlist);
 
         //make a reference to recycler_view
         progressBar = findViewById(R.id.progress_bar);
@@ -36,37 +35,36 @@ public class EmailsActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-   loadEmails();
+        loadProducts();
 
 
     }
-    private void loadEmails() {
-
+    private void loadProducts(){
         // Show loading
         showLoading(true);
 
-        // load email from server using Volley library
-        String url = "http://10.0.2.2/mail.php";
+        // load products from server using Volley library
+        String url = "http://localhost:8888/data.json";
 
         //create new request
-        StringRequest request = new StringRequest(url, new Listener<String>() {
+        StringRequest request = new StringRequest(url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
 
                 //convert Gson string to array of email using Gson
                 Gson gson = new Gson();
-                Email[] emails = gson.fromJson(response , Email[].class);
+                Product[] products = gson.fromJson(response , Product[].class);
 
                 //create and set an adapter
-                 EmailsAdapter adapter = new EmailsAdapter(emails);
-                 recyclerView.setAdapter(adapter);
+                ProductsAdapter adapter = new ProductsAdapter(products);
+                recyclerView.setAdapter(adapter);
 
             }
-        }, new ErrorListener() {
+        }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(EmailsActivity.this , "Somthing error while loading data from the server",Toast.LENGTH_LONG).show();
-                Log.d("PIUApp", "Load data error" + error.getMessage());
+                Toast.makeText(ProductsActivity.this , "Somthing error while loading data from the server",Toast.LENGTH_LONG).show();
+                Log.d("ProductSite", "Load data error" + error.getMessage());
                 // hide the progressbar and view recyclerview
                 showLoading(false);
             }
@@ -75,7 +73,7 @@ public class EmailsActivity extends AppCompatActivity {
         //add request to the queue
         Volley.newRequestQueue(this).add(request);
 
-}
+    }
 
     private void showLoading(boolean state) {
         if(state){
@@ -86,4 +84,6 @@ public class EmailsActivity extends AppCompatActivity {
             recyclerView.setVisibility(View.VISIBLE);
         }
     }
-}
+    }
+
+
