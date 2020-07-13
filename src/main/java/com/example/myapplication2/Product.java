@@ -2,7 +2,16 @@ package com.example.myapplication2;
 
 public class Product {
     private  String productName;
-    private  long code;
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    private  String code;
 
     public String getImageProduct() {
         return imageProduct;
@@ -20,13 +29,7 @@ public class Product {
         this.productName = productName;
     }
 
-    public long getCode() {
-        return code;
-    }
 
-    public void setCode(long code) {
-        this.code = code;
-    }
 
     public long getExpiredDate() {
         return expiredDate;

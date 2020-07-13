@@ -38,13 +38,21 @@ public class ProductsActivity extends AppCompatActivity {
         loadProducts();
 
 
+
     }
+
+//    public void onClickButton (View view){
+//        Intent intent = new Intent( this, ProductsdetailActivity.class);
+//        startActivity(intent);
+//    }
+
+
     private void loadProducts(){
         // Show loading
         showLoading(true);
 
         // load products from server using Volley library
-        String url = "http://localhost:8888/data.json";
+        String url = "http://10.0.2.2:8888/data.json";
 
         //create new request
         StringRequest request = new StringRequest(url, new Response.Listener<String>() {

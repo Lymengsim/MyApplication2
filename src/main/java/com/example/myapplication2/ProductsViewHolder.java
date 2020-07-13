@@ -21,14 +21,17 @@ public class ProductsViewHolder extends RecyclerView.ViewHolder {
 
         productName = itemView.findViewById(R.id.txt_productName);
         productPrice = itemView.findViewById(R.id.txt_productPrice);
+        productCode = itemView.findViewById(R.id.txt_productCode);
+        expiredDate = itemView.findViewById(R.id.txt_expiredDate);
         imgProduct = itemView.findViewById(R.id.img_product);
 
     }
 
     public  void bind(Product product){
         productName.setText((product.getProductName()));
-        productPrice.setText((int) product.getPrice());
-        productCode.setText((int) product.getCode());
+        productPrice.setText( product.getPrice()+"");
+        productCode.setText(product.getCode());
+        expiredDate.setText(product.getExpiredDate()+"");
         imgProduct.setImageURI(product.getImageProduct());
     }
 }
